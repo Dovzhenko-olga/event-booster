@@ -16,8 +16,8 @@ export const eventSettings = event => ({
   place: event._embedded.venues[0].name,
   city: event._embedded.venues[0].city.name,
   country: event._embedded.venues[0].country.name,
-  latitude: event._embedded.venues[0].location.latitude,
-  longitude: event._embedded.venues[0].location.longitude,
+  latitude: () => event._embedded.venues[0].location.latitude ? event._embedded.venues[0].location.latitude : 0,
+  longitude: () => event._embedded.venues[0].location.longitude ? event._embedded.venues[0].location.longitude : 0,
   prices: event.priceRanges,
   url: event.url
 });
