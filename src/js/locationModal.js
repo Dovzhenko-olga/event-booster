@@ -11,7 +11,8 @@ const onLocationClick = e => {
     return
   }
   const loader = new Loader({
-    apiKey: "AIzaSyB_MgjKUjqfNFXC9EkEMOpcZWeydVUozWg",
+    apiKey: "Eej9rmqIaOmfq01Rw2ZUVWBw",
+    // apiKey: "AIzaSyB_MgjKUjqfNFXC9EkEMOpcZWeydVUozWg",
   });
   loader.load().then(() => {
     const latLng = {
